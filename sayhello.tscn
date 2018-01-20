@@ -2,14 +2,14 @@
 
 [ext_resource path="res://sayhello.gd" type="Script" id=1]
 
-[node name="Panel" type="Panel" index="0"]
+[node name="Panel" type="Panel"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 205.0
-margin_bottom = 537.0
+margin_right = 204.0
+margin_bottom = 453.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 0
 mouse_default_cursor_shape = 0

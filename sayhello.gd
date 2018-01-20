@@ -9,6 +9,7 @@ func _ready():
 	# Initialization here
 	get_node("Button").connect("pressed",self,"_on_button_pressed")
 	get_node("HSlider").connect("value_changed",self,"_on_slider_moved")
+	pass
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
@@ -20,3 +21,4 @@ func _on_button_pressed():
 	
 func _on_slider_moved(value):
     get_node("Label").text=String(value)
+	
