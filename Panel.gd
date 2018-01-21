@@ -5,11 +5,14 @@ extends Panel
 # var b = "textvar"
 
 var GrainPrice = 7
+var Player
 var PlayerMoney = 0
 
 func _ready():
 	get_node("HSliderGrain").connect("value_changed",self,"_on_slider_moved")
-	PlayerMoney = get_node("/root/Main/Player").money
+	Player = get_node("/root/Main/Player")
+	PlayerMoney = Player.money
+	get_node("LabelCurrentCity").text=get_node("/root/Main/Player/CurrentCity").CityName
 
 	get_node("LabelPlayerGold").text=String(PlayerMoney)
 	pass
