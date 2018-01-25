@@ -3,6 +3,10 @@ extends Node
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+var grainAmount = 100
+var grainBuyPrice = 50
+var grainSellPrice = -70
+
 
 func _ready():
 	# Called every time the node is added to the scene.
